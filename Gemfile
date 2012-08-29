@@ -26,3 +26,5 @@ group :development do
   gem "debugger"
   gem "capistrano"
 end
+
+gem 'therubyracer', :group => :production
