@@ -16,3 +16,4 @@ rerun.txt
 pickle-email-*.html
 /index/
 /uploads/
+/config/database.yml
