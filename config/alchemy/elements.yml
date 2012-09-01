@@ -101,15 +101,13 @@
   - name: headline
     type: EssenceText
 
-- name: code
-  contents:
-  - name: source
-    type: EssenceRichtext
-
 - name: screenshot
   contents:
   - name: image
     type: EssencePicture
+
+- name: slideshow
+  picture_gallery: true
 
 - name: video
   contents:

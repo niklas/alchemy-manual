@@ -1,0 +1,5 @@
+<div class="slideshow" id="<%= element_dom_id(element) %>"<%= element_preview_code(element) %>>
+<%- element.contents.gallery_pictures.each do |image| -%>
+  <%= render_essence_view(image, :image_size => "636x405", crop: true) %>
+<%- end -%>
+</div>
