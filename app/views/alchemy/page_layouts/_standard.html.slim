@@ -1,23 +1,29 @@
-header.row
-  #logo.four.columns
-    = image_tag('alchemy_logo.png')
-  #title.eight.columns
+header
+  .row
+    #logo.four.columns
+      = image_tag('alchemy_logo.png')
+    #title.eight.columns
+      h1 = @page.name
+  .row.show-for-small
+    .twelve.columns
+      .menu-action
+        a#sidebar-button.small.secondary.button href="#navigation" &#x2630;
 
 .row
-  #navigation.four.columns
+  section#navigation.four.columns
     = render_navigation
-  #main.eight.columns
-    h1 = @page.name
+  section#main.eight.columns
     = render_elements
     .pagination
       - if @page.previous
-        = link_to "&laquo; #{@page.previous.name}".html_safe, show_alchemy_page_path(@page.previous), class: 'button'
+        = link_to "&laquo; #{@page.previous.name}".html_safe, show_alchemy_page_path(@page.previous), class: 'button left'
       - if @page.next
         = link_to "#{@page.next.name} &raquo;".html_safe, show_alchemy_page_path(@page.next), class: 'button right'
 
-footer.row
-  .twelve.columns
-    ul.link-list
-      li = link_to 'Homepage', 'http://alchemy-cms.com'
-      li = link_to 'Sourcecode', 'https://github.com/magic_labs/alchemy_cms'
-      li = link_to 'API Dokumentation', 'http://rubydoc.info/github/magiclabs/alchemy_cms/master/frames'
+footer
+  .row
+    .twelve.columns
+      ul.link-list
+        li = link_to 'Homepage', 'http://alchemy-cms.com'
+        li = link_to 'Sourcecode', 'https://github.com/magic_labs/alchemy_cms'
+        li = link_to 'API Dokumentation', 'http://rubydoc.info/github/magiclabs/alchemy_cms/master/frames'

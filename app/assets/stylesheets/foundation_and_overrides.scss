@@ -17,7 +17,7 @@ $alchemy_dark_blue: darken($alchemy_blue, 50);
 $alchemy_green: #87AC59;
 
 $mainColor: $alchemy_dark_blue;
-$secondaryColor: $alchemy_green;
+$secondaryColor: $alchemy_blue;
 // $alertColor: #c60f13;
 // $successColor: #5da423;
 $txtColor: $anthrazit;
@@ -86,4 +86,8 @@ h1, h2, h3 { color: $alchemy_green; }
 dl.tabs.vertical dd.active a {
   font-weight: normal;
   background: $alchemy_dark_blue;
+}
+
+a.button {
+  font-weight: normal;
 }

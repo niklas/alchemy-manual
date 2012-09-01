@@ -1,5 +1,5 @@
 - unless pages.blank?
-  dl.tabs.vertical
+  dl.tabs.vertical.hide-for-small
     - pages.each do |page|
       dd class={page_active?(page) ? 'active' : nil}
         = link_to(                                                               \
