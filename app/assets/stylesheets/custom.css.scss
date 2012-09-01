@@ -1,6 +1,11 @@
 @import "foundation_and_overrides";
 
 header {
+  padding: 1em 0;
+
+  .row.show-for-small {
+    margin-bottom: -1em
+  }
 
   .menu-action {
     float: left;

@@ -16,9 +16,9 @@ header
     = render_elements
     .pagination
       - if @page.previous
-        = link_to "&laquo; #{@page.previous.name}".html_safe, show_alchemy_page_path(@page.previous), class: 'button left'
+        = link_to "&laquo; #{@page.previous.name}".html_safe, show_alchemy_page_path(@page.previous), class: 'secondary button left'
       - if @page.next
-        = link_to "#{@page.next.name} &raquo;".html_safe, show_alchemy_page_path(@page.next), class: 'button right'
+        = link_to "#{@page.next.name} &raquo;".html_safe, show_alchemy_page_path(@page.next), class: 'secondary button right'
 
 footer
   .row
