@@ -1,9 +1,7 @@
 source 'https://rubygems.org'
 
-gem "alchemy_cms", :github => "magiclabs/alchemy_cms"
+gem "alchemy_cms", :github => "magiclabs/alchemy_cms", :branch => '2.3-stable'
 # gem "alchemy_cms", :path => "../../ruby/gems/alchemy_cms"
-
-gem "rails", '3.2.8'
 
 gem 'mysql2'
 

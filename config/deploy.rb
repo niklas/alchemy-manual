@@ -3,17 +3,18 @@ require 'alchemy/capistrano'
 load 'deploy/assets'
 
 # ssh settings
-set(:user)                      { Capistrano::CLI.ui.ask('Enter your ssh username: ') }
-set(:password)                  { Capistrano::CLI.password_prompt("Enter the password for #{user}: ") }
-set(:port)                      { Capistrano::CLI.ui.ask('Enter the ssh port: ') }
+set :user,                      "rails1"
+set :ssh_options,               { :forward_agent => true }
+ssh_options[:keys] =            [File.join(ENV["HOME"], ".ssh", "id_rsa")]
+default_run_options[:pty] =     true
 
 # domain names
-role :app,                      "alchemy-cms.com"
-role :web,                      "alchemy-cms.com"
-role :db,                       "alchemy-cms.com", :primary => true
+role :app,                      "server1904.railsvserver.de"
+role :web,                      "server1904.railsvserver.de"
+role :db,                       "server1904.railsvserver.de", :primary => true
 
 # the webserver path
-set :deploy_to,                 "/var/www/web28/html/alchemy-manual"
+set :deploy_to,                 "/var/www/rails1"
 
 # repository settings
 set :scm,                       "git"
