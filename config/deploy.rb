@@ -14,7 +14,7 @@ role :web,                      "server1904.railsvserver.de"
 role :db,                       "server1904.railsvserver.de", :primary => true
 
 # the webserver path
-set :deploy_to,                 "/var/www/rails1"
+set :deploy_to,                 "/var/www/alchemy-manual"
 
 # repository settings
 set :scm,                       "git"
