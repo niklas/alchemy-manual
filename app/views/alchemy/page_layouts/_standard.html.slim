@@ -22,8 +22,11 @@ header
 
 footer
   .row
-    .twelve.columns
+    .eight.columns
       ul.link-list
         li = link_to 'Homepage', 'http://alchemy-cms.com'
         li = link_to 'Sourcecode', 'https://github.com/magic_labs/alchemy_cms'
         li = link_to 'API Dokumentation', 'http://rubydoc.info/github/magiclabs/alchemy_cms/master/frames'
+    .four.columns
+      ul.link-list
+        li = link_to 'Hosting sponsored by Railshoster', ::I18n.locale == :de ? 'http://www.railshoster.de' : 'http://www.railshoster.com'
