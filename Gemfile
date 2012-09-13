@@ -1,8 +1,6 @@
 source 'https://rubygems.org'
 
-gem "alchemy_cms", :github => "magiclabs/alchemy_cms", :branch => '2.3-stable'
-# gem "alchemy_cms", :path => "../../ruby/gems/alchemy_cms"
-
+gem "alchemy_cms", '2.3.0'
 gem 'mysql2'
 
 # Gems used only for assets and not required
@@ -25,4 +23,7 @@ group :development do
   gem "capistrano"
 end
 
-gem 'therubyracer', :group => :production
+group :production do
+  gem 'therubyracer'
+  gem 'newrelic_rpm'
+end
