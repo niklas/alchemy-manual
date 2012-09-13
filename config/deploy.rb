@@ -22,6 +22,7 @@ set :repository,                "git://github.com/magiclabs/alchemy-manual.git"
 set :branch,                    "master"
 
 # before hooks
+before "deploy",                "deploy:web:disable"
 before "deploy:start",          "deploy:seed"
 before "deploy:create_symlink", "deploy:migrate"
 
@@ -29,6 +30,7 @@ before "deploy:create_symlink", "deploy:migrate"
 after "deploy:setup",           "alchemy:database_yml:create"
 after "deploy:assets:symlink",  "alchemy:database_yml:symlink"
 after "deploy",                 "deploy:cleanup"
+after "deploy",                 "deploy:web:enable"
 
 # special tasks
 
