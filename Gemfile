@@ -18,6 +18,7 @@ end
 group :development do
   gem 'debugger'
   gem 'capistrano'
+  gem 'capistrano-maintenance'
 end
 
 group :production do
