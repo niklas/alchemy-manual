@@ -69,7 +69,7 @@ sitemap:
 #   rake alchemy:convert:urlnames:to_nested
 #   rake alchemy:convert:urlnames:to_slug
 #
-url_nesting: false
+url_nesting: true
 
 # === Picture rendering settings
 #
