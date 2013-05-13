@@ -3,8 +3,8 @@ Encoding.default_internal = Encoding::UTF_8
 
 source 'https://rubygems.org'
 
-gem 'rails', '~> 3.2.12'
-gem 'alchemy_cms', github: 'magiclabs/alchemy_cms', branch: '2.5-stable'
+gem 'rails', '~> 3.2.13'
+gem 'alchemy_cms', github: 'magiclabs/alchemy_cms', branch: '2.6-stable'
 gem 'mysql2'
 gem 'slim-rails'
 
