@@ -16,12 +16,15 @@ group :assets do
   gem 'compass-rails',   '~> 1.0.3'
   gem 'zurb-foundation', '~> 3.0.9'
   gem 'uglifier',        '>= 1.0.3'
+  gem 'quiet_assets'
+  gem 'turbo-sprockets-rails3'
 end
 
 group :development do
   gem 'debugger'
   gem 'capistrano'
   gem 'capistrano-maintenance'
+  gem 'thin'
 end
 
 group :production do
