@@ -1,9 +1,9 @@
 GIT
   remote: git://github.com/magiclabs/alchemy_cms.git
-  revision: 0c6a18eb2b13df92d74502792137948c0031dbaa
+  revision: ae057d5c3c9a3d31752fcc07cdf36ae3e374e118
   branch: 2.6-stable
   specs:
-    alchemy_cms (2.6.0.rc5)
+    alchemy_cms (2.6.0)
       acts-as-taggable-on (~> 2.1)
       acts_as_ferret (~> 0.5)
       acts_as_list (~> 0.2.0)
@@ -126,14 +126,13 @@ GEM
     jquery-ui-rails (3.0.1)
       jquery-rails
       railties (>= 3.1.0)
-    json (1.7.7)
+    json (1.8.0)
     kaminari (0.14.1)
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
     libv8 (3.3.10.4)
     magiclabs-userstamp (2.0.2)
-    mail (2.5.3)
-      i18n (>= 0.4.0)
+    mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.23)
