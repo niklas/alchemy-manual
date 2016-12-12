@@ -50,7 +50,7 @@
 #
 # For most contents in an element you can specify additional options, so they get rendered in a specific way.
 # These options can be defined as symbols, but its too much to list them up here.
-# You can find these options described in the application_helper.rb, most of them at the render_essence method.
+# You can find these options described in the essences_helper.rb, most of them at the render_essence method.
 #
 # == Setting a content as preview-text for the element
 #
